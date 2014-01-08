@@ -1,0 +1,40 @@
+# Tell the screen to load up BASH at the start and load .profile
+shell -/bin/zsh
+
+# Nice little visual display at bottom of screen
+hardstatus on
+hardstatus alwayslastline "%{= kW}%-w%{= Wk}%n %t%{-}%+w %-= %{= kB}Host:%{= kW} %H | %{= kB}Up:%{= kW} %1` | %{= kB}Load:%{= kW} %5` | %{= kB}MEM:%{= kW} %2`MB | %{= kB}SW: %{= kW}%3`MB | %m/%d %c"
+
+# No seizures please
+vbell "off"
+
+# No startup message
+startup_message "off"
+
+# Rebind C-a to C-o
+escape ^Uu
+
+# Unbind ctrl+s from xoff in order to be able to search in emacs
+bind s
+bind ^S
+# Unbind ctrl+x from lockscreen in order to be able to save in emacs
+bind x
+bind ^X
+
+# Captions are a second line that can be used. Screen alerts will not display in them.
+#caption always "%{= KW}%-w%{= gW}%n %t%{-}%+w %-="
+#caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-=   | %1` | %2`MB/%3`MB | %6` Unread | %m/%d %l:%M %p"
+
+# Backticks to display information in status bar
+backtick 1 60 60 /home/jvalentini/installs/bin/get_uptime
+backtick 2 60 60 /home/jvalentini/installs/bin/get_freemem
+backtick 3 60 60 /home/jvalentini/installs/bin/get_freeswap
+backtick 5 60 60 /home/jvalentini/installs/bin/get_load
+
+# Startup screens
+
+screen -t logs ssh jvalentini@testing
+
+chdir $HOME/git/omnix
+screen -t
+select 1
