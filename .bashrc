@@ -1,4 +1,4 @@
-export ORACLE_HOME="/u01/app/oracle/product/client/11g"
+export ORACLE_HOME="/u01/app/oracle/product/client/11.2.0.4"
 export SCRIPTS_DIR="$HOME/scripts"
 export PATH="$HOME/.cask/bin:$SCRIPTS_DIR/ruby:$SCRIPTS_DIR/perl:$SCRIPTS_DIR/php:/home/dev/bin:$ORACLE_HOME/bin:$HOME/installs/bin:$HOME/.gems/bin:/usr/local/sbin/:$PATH"
 export LD_LIBRARY_PATH="$ORACLE_HOME/lib:$HOME/installs/lib:$LD_LIBRARY_PATH"
@@ -63,9 +63,6 @@ if [ -f ~/git-prompt.sh ]; then
 . ~/git-prompt.sh
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 fi
-
-export GITLAB_URL='http://gitlab.amicillc.com'
-export GITLAB_API_TOKEN='ki9oSnepnUcqDq5z38xo'
 
 alias screen-irc='screen -x main -p 1'
 alias screen-main='screen -S main'

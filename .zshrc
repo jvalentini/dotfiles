@@ -45,7 +45,7 @@ plugins=(git ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export ORACLE_HOME="/u01/app/oracle/product/client/11g"
+export ORACLE_HOME="/u01/app/oracle/product/client/11.2.0.4"
 export SCRIPTS_DIR="$HOME/scripts"
 export PATH="$HOME/.cask/bin:$SCRIPTS_DIR/ruby:$SCRIPTS_DIR/php:$ORACLE_HOME/bin:$HOME/.gems/bin:$HOME/installs/bin:/home/dev/bin:/usr/local/sbin/:$PATH"
 

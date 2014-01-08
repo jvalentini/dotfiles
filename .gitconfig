@@ -1,0 +1,29 @@
+[http]
+  proxy = 13.147.7.31:8000
+[core]
+[user]
+  name = Justin Valentini
+  email = justin.valentini@gmail.com
+[credential]
+  helper = cache --timeout=28800
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  log = auto
+[alias]
+  aa = add -A
+  b = branch
+  ci = commit
+  co = checkout
+  d = diff --color
+  dc = diff --cached --color
+  gr = log --graph
+  go = log --graph --pretty=oneline --abbrev-commit
+  st = status
+  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%h - (%ar) %s - %an%d' --all
+[push]
+  default = simple
+[include]
+  path = .gitconfig-local
