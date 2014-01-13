@@ -1,5 +1,3 @@
-[http]
-  proxy = 13.147.7.31:8000
 [core]
 [user]
   name = Justin Valentini
