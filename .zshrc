@@ -40,6 +40,7 @@ export https_proxy=http://13.147.7.31:8000
 if [[ $HOST == 'alyssa' ]]; then
     # Alyssa exports
     export ORACLE_HOME="/u01/app/oracle/product/client/11.2.0.4"
+    export TNS_ADMIN="$ORACLE_HOME/network/admin"
     export SCRIPTS_DIR="$HOME/scripts"
     export PATH="$HOME/.cask/bin:$SCRIPTS_DIR/ruby:$SCRIPTS_DIR/php:$ORACLE_HOME/bin:$HOME/.gems/bin:$HOME/installs/bin:/home/dev/bin:/usr/local/sbin/:$PATH"
 else
