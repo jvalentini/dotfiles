@@ -32,10 +32,6 @@ plugins=(git ruby rails heroku lein)
 
 source $ZSH/oh-my-zsh.sh
 
-export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
-export http_proxy=http://13.147.7.31:8000
-export https_proxy=http://13.147.7.31:8000
-
 # All export vars should be found in a local .export file
 source $HOME/dotfiles/.exports.sh
 
