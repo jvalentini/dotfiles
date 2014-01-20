@@ -35,6 +35,6 @@ function gc {
   echo "$*"
 }
 
-if [ -f $HOME/dotfiles/local-aliases.sh ]; then
-    source $HOME/dotfiles/local-aliases.sh
+if [ -f $HOME/dotfiles/.local-aliases.sh ]; then
+    source $HOME/dotfiles/.local-aliases.sh
 fi
