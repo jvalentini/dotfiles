@@ -21,6 +21,8 @@ alias l='ls -CF'
 alias alyssa='ssh jvalentini@alyssa'
 alias be='bundle exec'
 
+alias omnix='cd $HOME/git/omnix'
+
 function g {
   if [[ $# > 0 ]]; then
     git $@
