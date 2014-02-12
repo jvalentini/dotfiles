@@ -23,6 +23,8 @@ if [[ $HOST == 'alyssa' ]]; then
     export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
     export VIRTUALENVWRAPPER_VIRTUALENV="/usr/local/bin/virtualenv-2.7"
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+    export P4CONFIG=".p4rc"
 else
     export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,infrastructure.amicillc.com,testing.amicillc.com
     export http_proxy=http://13.147.7.31:8000
