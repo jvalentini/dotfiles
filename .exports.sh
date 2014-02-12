@@ -29,6 +29,13 @@ else
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
 
+    # Virtualenv
+    export WORKON_HOME="$HOME/virtualenv"
+    export PROJECT_HOME="$HOME/git/"
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+    source /usr/local/bin/virtualenvwrapper.sh
+
     export EDITOR="$HOME/installs/bin/editor.sh"
     export JAVA_HOME="/usr/"
 
