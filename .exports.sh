@@ -2,6 +2,9 @@ export AMICI_USERNAME="jvalentini"
 export DEV_USERNAME='jvalentini'
 export APP_USERNAME='jvalentini_amicillccom'
 
+
+[ -f $HOME/dotfiles/secret.sh ] && source $HOME/dotfiles/secret.sh
+
 if [[ $HOST == 'alyssa' ]]; then
     # Alyssa exports
     export ORACLE_HOME="/u01/app/oracle/product/client/11.2.0.4"
