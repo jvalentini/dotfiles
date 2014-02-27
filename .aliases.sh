@@ -22,6 +22,9 @@ alias alyssa='ssh jvalentini@alyssa'
 alias be='bundle exec'
 
 alias omnix='cd $HOME/git/omnix'
+alias pc='php $HOME/installs/bin/composer.phar'
+alias pu='php $HOME/installs/bin/phpunit.phar'
+alias t='php $HOME/installs/bin/phpunit.phar'
 
 function g {
   if [[ $# > 0 ]]; then
