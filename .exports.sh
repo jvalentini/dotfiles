@@ -27,12 +27,15 @@ if [[ $HOST == 'alyssa' ]]; then
     export P4CONFIG=".p4rc"
 else
     export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,infrastructure.amicillc.com,testing.amicillc.com
-    export http_proxy=http://13.147.7.31:8000
-    export https_proxy=http://13.147.7.31:8000
-    export ORACLE_HOME="/opt/oracle/instantclient_12_1"
+    export http_proxy=http://httpproxy.amicillc.com:8080
+    export https_proxy=http://httpproxy.amicillc.com:8080
+    export ORACLE_HOME="/opt/oracle/instantclient_11_2"
+    export LD_LIBRARY_PATH="$ORACLE_HOME"
+    export NLS_LANG='AMERICAN_AMERICA.utf8'
     export TNS_ADMIN="$HOME"
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
+    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
 
     # Virtualenv
     export WORKON_HOME="$HOME/virtualenv"
