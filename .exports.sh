@@ -1,6 +1,7 @@
 export AMICI_USERNAME="jvalentini"
 export DEV_USERNAME='jvalentini'
 export APP_USERNAME='jvalentini_amicillccom'
+export ORACLE_USERNAME=$DEV_USERNAME
 
 export JIRA_HOST='jira.amicillc.com'
 export JIRA_PORT='443'
