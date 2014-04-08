@@ -23,3 +23,7 @@
   lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%h - (%ar) %s - %an%d' --all
 [include]
   path = .gitconfig-local
+[rerere]
+	enabled = true
+[pull]
+	ff = only
