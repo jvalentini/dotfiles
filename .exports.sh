@@ -35,7 +35,7 @@ else
     export ORACLE_HOME="/opt/oracle/instantclient_11_2"
     export LD_LIBRARY_PATH="$ORACLE_HOME"
     export NLS_LANG='AMERICAN_AMERICA.utf8'
-    export TNS_ADMIN="$HOME"
+    export TNS_ADMIN="$HOME/tnsnames/"
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
     export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
