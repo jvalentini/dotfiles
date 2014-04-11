@@ -49,7 +49,7 @@ else
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
     source /usr/local/bin/virtualenvwrapper.sh
 
-    export EDITOR="$HOME/installs/bin/editor.sh"
+    export EDITOR="emacs"
     export JAVA_HOME="/usr/"
 
     eval "$(rbenv init -)"
