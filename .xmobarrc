@@ -1,0 +1,17 @@
+Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Static { xpos = 1681, ypos = 0, width = 1278, height = 15 }
+       , lowerOnStart = True
+       , commands = [ Run Weather "KALB" ["-t","Albany: <tempF>°F <skyCondition> <rh>% hum","-L","64","-H","77","--normal","green","--high","red","--low","lightblue"] 3000
+                    , Run Network "eth0" ["-t","Down: <rx> | Up: <tx>","--low","lightblue","--normal","lightgreen","--high","green"] 5
+                    , Run Cpu ["-L","30","-H","50","--low","lightblue","--normal","yellow","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%","-L","20","-H","60","--low","lightblue","--normal","yellow","--high","red"] 10
+                    , Run Swap ["--low","lightblue","--normal","yellow","--high","red"] 10
+                    , Run Date "%a %b %_d %l:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %eth0% <fc=#666666>|</fc> %cpu% <fc=#666666>|</fc> %memory% <fc=#666666>|</fc> %swap% <fc=#666666>|</fc> %KALB% <fc=#666666>|</fc> <fc=#ee9a00>%date%</fc>"
+       }

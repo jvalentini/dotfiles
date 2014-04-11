@@ -9,9 +9,9 @@ import System.Exit
 myManageHook = composeAll
     [ className =? "Gimp"     --> doFloat
     , className =? "Firefox"  --> doFloat
-    , className =? "Firefox"  --> doShift "7"
+    , className =? "Pidgin"   --> doShift "6"
+    , className =? "Firefox"  --> doShift "8"
     , className =? "Conkeror" --> doShift "8"
-    , className =? "Pidgin"   --> doShift "8"
     , className =? "Vmplayer" --> doShift "9"
     ]
 
@@ -30,7 +30,7 @@ myWorkspaces = ["1","2","3","4","5","6","7","8","9"]
 
 main = do
     xmproc <- spawnPipe "xmobar"
-    synergyproc <- spawn "synergyc 13.242.228.128"
+--     synergyproc <- spawn "synergyc 13.242.228.128"
     xrandrproc <- spawn "xrandr --auto --output HDMI1 --mode 1680x1050 --left-of VGA1"
     xscreensaverproc <- spawn "xscreensaver -no-splash"
     xmonad $ defaultConfig
