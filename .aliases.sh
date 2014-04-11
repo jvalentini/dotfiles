@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 alias ls='ls -a --color=auto'
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'

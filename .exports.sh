@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 export AMICI_USERNAME="jvalentini"
 export DEV_USERNAME='jvalentini'
 export APP_USERNAME='jvalentini_amicillccom'
