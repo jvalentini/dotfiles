@@ -45,3 +45,13 @@ function gc {
 if [ -f $HOME/dotfiles/.local-aliases.sh ]; then
     source $HOME/dotfiles/.local-aliases.sh
 fi
+
+function update_tnsnames {
+    if [ -n "$TNS_ADMIN" ]
+    then
+        echo "Checking for tnsname updates..."
+        (cd $TNS_ADMIN && git pull)
+    else
+        echo "Requires TNS_ADMIN to be set"
+    fi
+}
