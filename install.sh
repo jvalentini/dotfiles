@@ -16,7 +16,8 @@ do
     create_link $i
 done
 
-xmonad="xmonad.hs"
 xmonad_dir=$HOME/.xmonad
+mkdir -p $xmonad_dir && cd $xmonad_dir && ln -sf "$dotfile_dir/xmonad.hs" xmonad.hs
 
-mkdir -p $xmonad_dir && cd $xmonad_dir && ln -sf "$dotfile_dir/.xmonad/$xmonad" $xmonad
+pip_dir=$HOME/.pip
+mkdir -p $pip_dir && cd $pip_dir && ln -sf "$pip_dir/pip.conf" pip.conf
