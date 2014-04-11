@@ -31,7 +31,7 @@ myWorkspaces = ["1","2","3","4","5","6","7","8","9"]
 main = do
     xmproc <- spawnPipe "xmobar"
 --     synergyproc <- spawn "synergyc 13.242.228.128"
-    xrandrproc <- spawn "xrandr --auto --output HDMI1 --mode 1680x1050 --left-of VGA1"
+    xrandrproc <- spawn "xrandr --auto --output HDMI1 --primary --mode 1680x1050 --left-of VGA1"
     xscreensaverproc <- spawn "xscreensaver -no-splash"
     xmonad $ defaultConfig
         { terminal          = "gnome-terminal"
