@@ -9,8 +9,8 @@ import System.Exit
 myManageHook = composeAll
     [ className =? "Gimp"     --> doFloat
     , className =? "Firefox"  --> doFloat
-    , className =? "Pidgin"   --> doShift "6"
-    , className =? "Firefox"  --> doShift "8"
+    , className =? "Firefox"  --> doShift "7"
+    , className =? "Pidgin"   --> doShift "8"
     , className =? "Conkeror" --> doShift "8"
     , className =? "Vmplayer" --> doShift "9"
     ]
