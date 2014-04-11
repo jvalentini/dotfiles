@@ -16,6 +16,7 @@ do
     create_link $i
 done
 
-cp -r "$dotfile_dir/.xmonad" .
+xmonad="xmonad.hs"
+xmonad_dir=$HOME/.xmonad
 
-ls -al --color
+mkdir -p $xmonad_dir && cd $xmonad_dir && ln -sf "$dotfile_dir/.xmonad/$xmonad" $xmonad
