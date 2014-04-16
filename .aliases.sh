@@ -28,6 +28,8 @@ alias pc='php $HOME/installs/bin/composer.phar'
 alias pu='php $HOME/installs/bin/phpunit.phar'
 alias t='php $HOME/installs/bin/phpunit.phar'
 
+alias ec='emacsclient -c &'
+
 function g {
   if [[ $# > 0 ]]; then
     git $@
