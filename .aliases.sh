@@ -30,6 +30,8 @@ alias t='php $HOME/installs/bin/phpunit.phar'
 
 alias ec='emacsclient -c &'
 
+alias omnix='cd ~/git/omnix'
+
 function g {
   if [[ $# > 0 ]]; then
     git $@
