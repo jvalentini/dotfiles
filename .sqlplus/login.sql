@@ -109,8 +109,11 @@ COLUMN email_address FORMAT A40
 COLUMN app_username FORMAT A40
 COLUMN real_email_address FORMAT A40
 COLUMN db_username FORMAT A40
+COLUMN username FORMAT A40
 COLUMN finish_time FORMAT a22
 COLUMN start_time FORMAT a22
+COLUMN occurred_on FORMAT a22
+COLUMN action_type FORMAT a15
 COLUMN insertion_time FORMAT a22
 COLUMN varname FORMAT a35
 COLUMN expiration FORMAT a25
