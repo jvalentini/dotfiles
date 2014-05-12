@@ -38,7 +38,6 @@ else
     export LD_LIBRARY_PATH="$ORACLE_HOME"
     export NLS_LANG='AMERICAN_AMERICA.utf8'
     export TNS_ADMIN="$HOME/tnsnames/"
-    export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
     export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
 
@@ -49,8 +48,10 @@ else
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
     source /usr/local/bin/virtualenvwrapper.sh
 
+    export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+    export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$WORKON_HOME:$PROJECT_HOME:$JAVA_HOME/bin:$PATH"
+
     export EDITOR="emacs"
-    export JAVA_HOME="/usr/"
 
     eval "$(rbenv init -)"
 fi
