@@ -9,6 +9,8 @@ export JIRA_HOST='jira.amicillc.com'
 export JIRA_PORT='443'
 export JIRA_USERNAME='jvalentini'
 
+export OMNIX_SRC='$HOME/git/omnix'
+
 export TERM=xterm-256color
 
 [ -f $HOME/dotfiles/secret.sh ] && source $HOME/dotfiles/secret.sh
