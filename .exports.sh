@@ -32,6 +32,26 @@ if [[ $HOST == 'alyssa' ]]; then
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
     export P4CONFIG=".p4rc"
+elif [[ $HOST == 'justin-vm' ]]; then
+    export ORACLE_HOME="/opt/oracle/instantclient_11_2"
+    export LD_LIBRARY_PATH="$ORACLE_HOME"
+    export NLS_LANG='AMERICAN_AMERICA.utf8'
+    export TNS_ADMIN="$HOME/tnsnames/"
+    export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
+    export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
+    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
+
+    # Virtualenv
+    export WORKON_HOME="$HOME/virtualenv"
+    export PROJECT_HOME="$HOME/git/"
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+    source /usr/local/bin/virtualenvwrapper.sh
+
+    export EDITOR="emacs"
+    export JAVA_HOME="/usr/"
+
+    eval "$(rbenv init -)"
 else
     export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,infrastructure.amicillc.com,testing.amicillc.com
     export http_proxy=http://httpproxy.amicillc.com:8080
