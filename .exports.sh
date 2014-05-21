@@ -73,7 +73,7 @@ else
     export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$WORKON_HOME:$PROJECT_HOME:$JAVA_HOME/bin:$PATH"
 
-    export EDITOR="emacs"
+    export EDITOR="emacsclient"
 
     eval "$(rbenv init -)"
 fi
