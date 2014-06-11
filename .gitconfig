@@ -1,4 +1,5 @@
 [core]
+  editor = emacs
 [user]
   name = Justin Valentini
   email = justin.valentini@gmail.com
@@ -24,8 +25,10 @@
 [include]
   path = .gitconfig-local
 [rerere]
-	enabled = true
+  enabled = true
 [pull]
-	ff = only
+  ff = only
 [push]
-	default = simple
+  default = simple
+[branch]
+  autosetuprebase = always
