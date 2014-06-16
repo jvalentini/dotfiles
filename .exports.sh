@@ -38,6 +38,7 @@ if [[ $HOST == 'alyssa' ]]; then
     export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
     export VIRTUALENVWRAPPER_VIRTUALENV="/usr/local/bin/virtualenv-2.7"
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+    source /usr/local/bin/virtualenvwrapper.sh
 
     export P4CONFIG=".p4rc"
 elif [[ $HOST == 'justin-vm' ]]; then
