@@ -31,9 +31,10 @@ backtick 2 60 60 /home/jvalentini/installs/bin/get_freemem
 backtick 3 60 60 /home/jvalentini/installs/bin/get_freeswap
 backtick 5 60 60 /home/jvalentini/installs/bin/get_load
 
-# Startup screens
-
-screen -t logs ssh jvalentini@testing
+# Allow scrollback through output
+# If you're using gnome terminal, uncheck "Use keystrokes to scroll on alternate screen"
+# Source: http://stackoverflow.com/a/1125947
+termcapinfo xterm* ti@:te@
 
 chdir $HOME/git/omnix
 screen -t
