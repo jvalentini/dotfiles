@@ -37,11 +37,11 @@ SET DEFINE ON
 SET VERIFY OFF
 -- how many characters on a line? how wide is terminal ?
 --SET LINESIZE 239 use stty
-SET LINESIZE 300 use stty
+SET LINESIZE 140 use stty
 -- how many lines per page? how high is terminal ?
-SET PAGESIZE 1000
+SET PAGESIZE 10000
 -- how many characters to return from LONG columns; e.g., dba_views.text
-SET LONG 80
+SET LONG 32000
 -- what to display when a column is NULL
 SET NULL '--'
 -- show column headings
