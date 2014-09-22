@@ -30,7 +30,7 @@ if [[ $HOST == 'alyssa' ]]; then
     export TNS_ADMIN="$ORACLE_HOME/network/admin"
     export LD_LIBRARY_PATH="$ORACLE_HOME/lib"
     export SCRIPTS_DIR="$HOME/scripts"
-    export PATH="$HOME/.cask/bin:$SCRIPTS_DIR/ruby:$SCRIPTS_DIR/php:$ORACLE_HOME/bin:$HOME/.gems/bin:$HOME/installs/bin:/home/dev/bin:/usr/local/sbin/:$PATH"
+    export PATH="$HOME/.composer/vendor/bin:$HOME/.cask/bin:$SCRIPTS_DIR/ruby:$SCRIPTS_DIR/php:$ORACLE_HOME/bin:$HOME/.gems/bin:$HOME/installs/bin:/home/dev/bin:/usr/local/sbin/:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
 
     # Virtualenv
