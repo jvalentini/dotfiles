@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export AMICI_USERNAME="jvalentini"
+export AMICI_TEST_SCHEMA="test_jt16"
 export DEV_USERNAME='jvalentini'
 export APP_USERNAME='jvalentini_amicillccom'
 export ORACLE_USERNAME=$DEV_USERNAME
