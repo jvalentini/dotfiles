@@ -1,5 +1,6 @@
 [core]
   editor = emacs
+  excludesfile = /home/jvalentini/.gitignore
 [user]
   name = Justin Valentini
   email = justin.valentini@gmail.com
