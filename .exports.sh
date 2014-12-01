@@ -49,7 +49,7 @@ elif [[ $HOST == 'justin-vm' ]]; then
     export TNS_ADMIN="$HOME/tnsnames/"
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$PATH"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
-    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
+    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=13.147.7.31 -Dhttp.proxyPort=8000"
 
     # Virtualenv
     export WORKON_HOME="$HOME/virtualenv"
@@ -71,7 +71,7 @@ else
     export NLS_LANG='AMERICAN_AMERICA.utf8'
     export TNS_ADMIN="$HOME/tnsnames/"
     export SQLPATH="$HOME/.sqlplus:$HOME/git/sqlplus-scripts/"
-    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=httpproxy.amicillc.com -Dhttp.proxyPort=8080"
+    export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=13.147.7.31 -Dhttp.proxyPort=8000"
 
     # Virtualenv
     export WORKON_HOME="$HOME/virtualenv"
