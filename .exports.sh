@@ -13,6 +13,14 @@ export OMNIX_SRC='$HOME/git/omnix'
 
 export TERM=xterm-256color
 
+function git-log2json () {
+    git log \
+        --pretty=format:'{%n "commit": "%H",%n "author": "%an <%ae>",%n "date": "%ad",%n "message": "%f"%n},' \
+        $@ | \
+        perl -pe 'BEGIN{print "["}; END{print "]\n"}' | \
+        perl -pe 's/},]/}]/'
+}
+
 [ -f $HOME/dotfiles/secret.sh ] && source $HOME/dotfiles/secret.sh
 
 if [[ $HOST == 'alyssa' ]]; then
