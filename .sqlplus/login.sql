@@ -37,7 +37,7 @@ SET DEFINE ON
 SET VERIFY OFF
 -- how many characters on a line? how wide is terminal ?
 --SET LINESIZE 239 use stty
-SET LINESIZE 140 use stty
+SET LINESIZE 184 use stty
 -- how many lines per page? how high is terminal ?
 SET PAGESIZE 10000
 -- how many characters to return from LONG columns; e.g., dba_views.text
@@ -128,6 +128,17 @@ COLUMN name_prefix FORMAT a30
 COLUMN briefcasename FORMAT a40
 COLUMN range FORMAT a40
 COLUMN patch FORMAT a60
+COLUMN created_at FORMAT a22
+COLUMN started_at FORMAT a22
+COLUMN finished_at FORMAT a22
+COLUMN last_modified FORMAT a22
+COLUMN matter_name FORMAT a9
+COLUMN url FORMAT a20
+COLUMN transcript_schema FORMAT a5
+COLUMN matter_schema FORMAT a9
+COLUMN file_cabinet FORMAT a15
+COLUMN fulltext_server FORMAT a15
+COLUMN highlight_server FORMAT a15
 
 SET TERMOUT ON
 
