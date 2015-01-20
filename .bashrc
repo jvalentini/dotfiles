@@ -66,3 +66,6 @@ fi
 
 alias screen-irc='screen -x main -p 1'
 alias screen-main='screen -S main'
+
+export NVM_DIR="/home/justin/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
