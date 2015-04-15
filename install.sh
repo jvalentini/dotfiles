@@ -9,7 +9,7 @@ function create_link {
     ln -sf $dotfile_dir/$file $file
 }
 
-files=(".zshrc" ".screenrc" ".bashrc" ".gitconfig" ".gitignore" ".gemrc" ".xinitrc" ".xscreensaver" ".xmobarrc" ".synergy.conf" ".pylintrc" ".floorc" ".pypirc")
+files=(".zshrc" ".screenrc" ".bashrc" ".gitconfig" ".gitignore" ".gemrc" ".xinitrc" ".xscreensaver" ".xmobarrc" ".synergy.conf" ".pylintrc" ".floorc" ".pypirc" ".ansible.cfg")
 
 for i in "${files[@]}"
 do
