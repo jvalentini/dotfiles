@@ -139,6 +139,10 @@ COLUMN matter_schema FORMAT a9
 COLUMN file_cabinet FORMAT a15
 COLUMN fulltext_server FORMAT a15
 COLUMN highlight_server FORMAT a15
+COLUMN next_field_connector FOR a10
+COLUMN mime_type FOR a10
+col ot_partition_name for a5
+
 
 SET TERMOUT ON
 
