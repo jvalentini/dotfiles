@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dotfile_dir=$PWD
+dotfile_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 cd $HOME
 
