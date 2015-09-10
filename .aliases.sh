@@ -32,7 +32,7 @@ alias ec='emacsclient -c &'
 
 alias omnix='cd ~/git/omnix'
 
-alias phpunit='php $HOME/git/omnix/amici_php/scripts/phpunit'
+# alias phpunit='php $HOME/git/omnix/amici_php/scripts/phpunit'
 
 function g {
   if [[ $# > 0 ]]; then
@@ -64,3 +64,5 @@ function update_tnsnames {
 
 alias blog='162.243.112.88'
 alias ocean='ssh root@162.243.112.88'
+
+alias firefox=$HOME/installs/firefox/firefox
