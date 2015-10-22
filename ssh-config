@@ -1,0 +1,86 @@
+Host alyssa
+     HostName alyssa.amicillc.com
+     User jvalentini
+     Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
+     Compression yes
+     ForwardAgent yes
+
+Host testing
+     HostName testing.amicillc.com
+     User jvalentini
+     Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
+     Compression yes
+
+Host github.com
+     Port 443
+     HostName ssh.github.com
+     ProxyCommand corkscrew httpproxy.amicillc.com 8080 %h %p
+
+Host bitbucket.org
+     Port 443
+     HostName ssh.bitbucket.org
+     ProxyCommand corkscrew httpproxy.amicillc.com 8080 %h %p
+
+Host swa-prod
+     User swa-prod
+     HostName alb-rails01.amicillc.com
+     Compression yes
+
+Host swa
+     User swa
+     HostName alb-rails01.amicillc.com
+     Compression yes
+     ForwardAgent yes
+
+Host release-notifier
+     User release-notifier
+     HostName alb-rails01.amicillc.com
+     Compression yes
+
+Host release-notifier-qa
+     User release-notifier-qa
+     HostName alb-rails01.amicillc.com
+     Compression yes
+
+Host kafka-dev
+     User jvalentini
+     HostName kafka-dev.amicillc.com
+     Compression yes
+
+Host milano
+     HostName milano.uk.amicillc.com
+     User jvalentini
+     ForwardAgent yes
+
+Host searchd-prod
+     HostName nickel.amicillc.com
+     User searchd
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc nickel.amicillc.com 22
+
+Host searchd-prod2
+     HostName penny.amicillc.com
+     User searchd
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc penny.amicillc.com 22
+
+Host searchd-qa
+     HostName roc-qamsvc01.amicillc.com
+     User searchd
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-qamsvc01.amicillc.com 22
+
+Host searchd-dev
+     HostName roc-dvmsvc01.amicillc.com
+     User searchd
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-dvmsvc01.amicillc.com 22
+
+Host hades-qa
+     HostName roc-qamsvc01.amicillc.com
+     User hades
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-qamsvc01.amicillc.com 22
+
+Host hades-dev
+     HostName roc-dvmsvc01.amicillc.com
+     User hades
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-dvmsvc01.amicillc.com 22
+
+Host *
+     ForwardX11 no

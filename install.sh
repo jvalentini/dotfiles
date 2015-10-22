@@ -24,3 +24,6 @@ mkdir -p $pip_dir && cd $pip_dir && ln -sf "$dotfile_dir/pip.conf" pip.conf
 
 sqlplus_dir=$HOME/.sqlplus
 mkdir -p $sqlplus_dir && cd $sqlplus_dir && ln -sf "$dotfile_dir/.sqlplus/login.sql" login.sql
+
+ssh_dir=$HOME/.ssh
+mkdir -p $ssh_dir && cd $ssh_dir && ln -sf "$dotfile_dir/ssh-config" config
