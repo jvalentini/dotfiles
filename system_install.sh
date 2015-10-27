@@ -2,26 +2,40 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install -y git gnome-panel xmonad zsh python curl synergy python-pip rbenv libaio1 virtualbox python-dev redis ipython sqlite vagrant pylint ruby-dev vagrant
+
+sudo apt-get purge emacs emacs-snapshot-common emacs-snapshot-bin-common emacs-snapshot emacs-snapshot-el emacs-snapshot-gtk emacs23 emacs23-bin-common emacs23-common emacs23-el emacs23-nox emacs23-lucid auctex apel emacs24 emacs24-bin-common emacs24-common emacs24-common-non-dfsg emacs24-el
+
+# Add the following with visudo (/etc/sudoers)
+sudo echo 'Defaults env_keep += "http_proxy https_proxy ftp_proxy no_proxy"' >> /etc/sudoers
+
+sudo add-apt-repository ppa:git-core/ppa
+
+sudo apt-get install -y build-essential terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 virtualbox vagrant php python python-dev python-pip pylint ipython virtualenv virtualenvwrapper rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server
+
+sudo pip install format-sql
+
+# emacs
+sudo apt-get build-dep emacs24
+curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+rm -rf ~/.emacs.d
+git clone https://github.com/jvalentini/emacs.git .emacs.d/
 
 # ruby
 sudo apt-get -y install libc6-dev libssl-dev libmysql++-dev libsqlite3-dev make build-essential libssl-dev libreadline6-dev zlib1g-dev libyaml-dev
 
-pip install virtualenvwrapper
+# zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# chsh -s /bin/zsh
 
-curl -L http://install.ohmyz.sh | sh
-chsh -s /bin/zsh
-
+# dotfiles
 git clone https://github.com/jvalentini/dotfiles.git
 cd dotfiles
 bash ./install.sh
 
-curl -fsSkL https://raw.github.com/cask/cask/master/go | python
+# TODO!!!!!!!!
+move over ~/.emacs.d/custom/secret.json
 
-rm -rf ~/.emacs.d
-git clone https://github.com/jvalentini/emacs.git .emacs.d/
-
-touch ~/.emacs.d/custom/secret.json
+git clone git@gitlab.amicillc.com:dev-tools/amici-el.git ~/.emacs.d/lib/amici-el
 
 cask
 
@@ -34,7 +48,6 @@ cd $ORACLE_HOME
 sudo ln -s libclntsh.so.11.1 libclntsh.so
 
 git clone git@gitlab.amicillc.com:omnix-tools/tnsnames.git
-
 
 sudo add-apt-repository ppa:leolik/leolik
 sudo apt-get update
