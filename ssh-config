@@ -10,16 +10,6 @@ Host testing
      Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
      ForwardAgent yes
 
-Host github.com
-     Port 443
-     HostName ssh.github.com
-     ProxyCommand corkscrew httpproxy.amicillc.com 8080 %h %p
-
-Host bitbucket.org
-     Port 443
-     HostName ssh.bitbucket.org
-     ProxyCommand corkscrew httpproxy.amicillc.com 8080 %h %p
-
 Host swa-prod
      User swa-prod
      HostName alb-rails01.amicillc.com
