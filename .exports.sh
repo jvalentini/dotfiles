@@ -78,7 +78,6 @@ else
     export PROJECT_HOME="$HOME/git/"
     export PIP_VIRTUALENV_BASE=$WORKON_HOME
     export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-    source /usr/local/bin/virtualenvwrapper.sh
 
     export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
     export PATH="$HOME/.cask/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$ORACLE_HOME:$WORKON_HOME:$PROJECT_HOME:$JAVA_HOME/bin:$PATH"
