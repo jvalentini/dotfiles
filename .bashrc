@@ -16,14 +16,6 @@ export APP_USERNAME='jvalentini_amicillccom'
 
 unset LESS
 
-# Virtualenv
-export WORKON_HOME="$HOME/env"
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
-export VIRTUALENVWRAPPER_VIRTUALENV="/usr/local/bin/virtualenv-2.7"
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-source virtualenvwrapper.sh
-
 if echo hello|grep --color=auto l >/dev/null 2>&1; then
   export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 fi
