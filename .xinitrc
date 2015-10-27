@@ -1,2 +1,2 @@
 xset b off
-xset m 1
+xset m 0 10
