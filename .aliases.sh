@@ -61,8 +61,3 @@ function update_tnsnames {
         echo "Requires TNS_ADMIN to be set"
     fi
 }
-
-alias blog='162.243.112.88'
-alias ocean='ssh root@162.243.112.88'
-
-alias firefox=$HOME/installs/firefox/firefox
