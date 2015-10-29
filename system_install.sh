@@ -10,7 +10,13 @@ sudo echo 'Defaults env_keep += "http_proxy https_proxy ftp_proxy no_proxy"' >> 
 
 sudo add-apt-repository ppa:git-core/ppa
 
-sudo apt-get install -y build-essential terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 virtualbox vagrant php python python-dev python-pip pylint ipython virtualenv virtualenvwrapper rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server
+sudo apt-get install -y build-essential terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 virtualbox vagrant php python python-dev python-pip pylint ipython rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server php5
+
+sudo pip install -U pip
+sudo pip install virtualenvwrapper
+
+mkdir ~/bin
+curl -sS https://getcomposer.org/installer | php && mv composer.phar ~/bin && cd ~/bin && ln -sf composer.phar composer
 
 sudo pip install format-sql
 
