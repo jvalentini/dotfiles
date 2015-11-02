@@ -52,6 +52,11 @@ Host milano
      User jvalentini
      ForwardAgent yes
 
+Host hkp-lindev
+     HostName hkp-lindev.hk.amicillc.com
+     User jvalentini
+     ForwardAgent yes
+
 Host searchd-prod
      HostName nickel.amicillc.com
      User searchd
