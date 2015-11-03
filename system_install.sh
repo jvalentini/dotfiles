@@ -32,8 +32,7 @@ bash ./install.sh
 sudo dpkg-reconfigure virtualbox-dkms
 sudo dpkg-reconfigure virtualbox
 
-sudo pip install -U pip
-sudo pip install virtualenvwrapper
+sudo -H pip install -U pip setuptools virtualenvwrapper httpie 'requests[security]'
 
 sudo apt-get install -y ansible
 
