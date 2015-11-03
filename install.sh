@@ -9,15 +9,14 @@ function create_link {
     ln -sf $dotfile_dir/$file $file
 }
 
-files=(".zshrc" ".screenrc" ".bashrc" ".gitconfig" ".gitignore" ".gemrc" ".xinitrc" ".xscreensaver" ".xmobarrc" ".synergy.conf" ".pylintrc" ".pypirc" ".ansible.cfg" ".floorc.json" ".bumpversion.cfg")
+files=(".zshrc" ".screenrc" ".bashrc" ".gitconfig" ".gitignore" ".gemrc" ".xinitrc" ".xscreensaver" ".synergy.conf" ".pylintrc" ".pypirc" ".ansible.cfg" ".floorc.json" ".bumpversion.cfg")
 
 for i in "${files[@]}"
 do
     create_link $i
 done
 
-xmonad_dir=$HOME/.xmonad
-mkdir -p $xmonad_dir && cd $xmonad_dir && ln -sf "$dotfile_dir/.xmonad/xmonad.hs" xmonad.hs
+git clone git@github.com:jvalentini/xmonad-ubuntu-conf.git ~/.xmonad
 
 pip_dir=$HOME/.pip
 mkdir -p $pip_dir && cd $pip_dir && ln -sf "$dotfile_dir/pip.conf" pip.conf
