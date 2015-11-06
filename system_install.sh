@@ -15,7 +15,7 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get upgrade
 
-sudo apt-get install -y build-essential software-properties-common python-software-properties ubuntu-restricted-extras dkms terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 linux-headers-generic virtualbox-dkms virtualbox-5.0 vagrant php python python-dev python-pip pylint ipython rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server php5 gstreamer0.10-ffmpeg htop
+sudo apt-get install -y build-essential software-properties-common python-software-properties ubuntu-restricted-extras dkms terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 linux-headers-generic virtualbox-dkms virtualbox-5.0 vagrant php python python-dev python-pip pylint ipython rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server php5 gstreamer0.10-ffmpeg htop default-jre
 
 NOTE for firefox html5 support: you need to install the relevant ffmpeg package for your distribution and set media.mediasource.enabled, media.fragmented-mp4.exposed and media.fragmented-mp4.ffmpeg.enabled to true in about:config
 
