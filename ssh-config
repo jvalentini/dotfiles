@@ -58,14 +58,14 @@ Host hkp-lindev
      ForwardAgent yes
 
 Host searchd-prod
-     HostName nickel.amicillc.com
+     HostName alb-prmsvc01.amicillc.com
      User searchd
-     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc nickel.amicillc.com 22
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc alb-prmsvc01.amicillc.com 22
 
 Host searchd-prod2
-     HostName penny.amicillc.com
+     HostName roc-prmsvc01.amicillc.com
      User searchd
-     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc penny.amicillc.com 22
+     ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-prmsvc01.amicillc.com 22
 
 Host searchd-qa
      HostName roc-qamsvc01.amicillc.com
