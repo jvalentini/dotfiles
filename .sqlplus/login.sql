@@ -4,7 +4,7 @@
 -- quiet init
 SET TERMOUT OFF
 
-DEFINE user_name='justin'
+DEFINE user_name='jvalentini'
 
 -- edit buffer file
 SET EDITFILE /home/&&user_name/.sqlplus/edit.buffer
