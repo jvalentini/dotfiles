@@ -69,6 +69,10 @@ sudo apt-get install -y nodejs
 sudo mkdir -p /opt/oracle
 sudo mv instantclient_11_2 /opt/oracle/
 
+unzip instantclient-basic-linux.x64-11.2.0.4.0.zip
+unzip instantclient-sqlplus-linux.x64-11.2.0.4.0.zip
+unzip instantclient-sdk-linux.x64-11.2.0.4.0.zip
+
 cd $ORACLE_HOME
 sudo ln -s libclntsh.so.11.1 libclntsh.so
 
