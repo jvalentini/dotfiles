@@ -10,6 +10,7 @@ Host testing
      User jvalentini
      Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
      Compression yes
+     ForwardAgent yes
 
 Host github.com
      Port 443
@@ -25,6 +26,7 @@ Host swa-prod
      User swa-prod
      HostName alb-rails01.amicillc.com
      Compression yes
+     ForwardAgent yes
 
 Host swa
      User swa
@@ -36,16 +38,19 @@ Host release-notifier
      User release-notifier
      HostName alb-rails01.amicillc.com
      Compression yes
+     ForwardAgent yes
 
 Host release-notifier-qa
      User release-notifier-qa
      HostName alb-rails01.amicillc.com
      Compression yes
+     ForwardAgent yes
 
 Host kafka-dev
      User jvalentini
      HostName kafka-dev.amicillc.com
      Compression yes
+     ForwardAgent yes
 
 Host milano
      HostName milano.uk.amicillc.com
@@ -61,31 +66,37 @@ Host searchd-prod
      HostName alb-prmsvc01.amicillc.com
      User searchd
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc alb-prmsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host searchd-prod2
      HostName roc-prmsvc01.amicillc.com
      User searchd
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-prmsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host searchd-qa
      HostName roc-qamsvc01.amicillc.com
      User searchd
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-qamsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host searchd-dev
      HostName roc-dvmsvc01.amicillc.com
      User searchd
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-dvmsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host hades-qa
      HostName roc-qamsvc01.amicillc.com
      User hades
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-qamsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host hades-dev
      HostName roc-dvmsvc01.amicillc.com
      User hades
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-dvmsvc01.amicillc.com 22
+     ForwardAgent yes
 
 Host *
      ForwardX11 no
