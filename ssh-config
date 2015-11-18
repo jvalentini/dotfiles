@@ -2,14 +2,12 @@ Host alyssa
      HostName alyssa.amicillc.com
      User jvalentini
      Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
-     Compression yes
      ForwardAgent yes
 
 Host testing
      HostName testing.amicillc.com
      User jvalentini
      Ciphers blowfish-cbc,aes128-cbc,3des-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
-     Compression yes
      ForwardAgent yes
 
 Host github.com
@@ -25,31 +23,26 @@ Host bitbucket.org
 Host swa-prod
      User swa-prod
      HostName alb-rails01.amicillc.com
-     Compression yes
      ForwardAgent yes
 
 Host swa
      User swa
      HostName alb-rails01.amicillc.com
-     Compression yes
      ForwardAgent yes
 
 Host release-notifier
      User release-notifier
      HostName alb-rails01.amicillc.com
-     Compression yes
      ForwardAgent yes
 
 Host release-notifier-qa
      User release-notifier-qa
      HostName alb-rails01.amicillc.com
-     Compression yes
      ForwardAgent yes
 
 Host kafka-dev
      User jvalentini
      HostName kafka-dev.amicillc.com
-     Compression yes
      ForwardAgent yes
 
 Host milano
