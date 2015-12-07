@@ -80,3 +80,5 @@ cd $ORACLE_HOME
 sudo ln -s libclntsh.so.11.1 libclntsh.so
 
 git clone git@gitlab.amicillc.com:omnix-tools/tnsnames.git
+
+sudo npm install -g eslint
