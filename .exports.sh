@@ -62,6 +62,14 @@ elif [[ $HOST == 'justin-vm' ]]; then
     export JAVA_HOME="/usr/"
 
     eval "$(rbenv init -)"
+elif [[ $HOST == 'justin-lenovo' ]]; then
+    export PATH="$HOME/.cask/bin:$HOME/.rbenv/bin:$HOME/installs/bin:$PATH"
+    export EDITOR="emacs"
+    eval "$(rbenv init -)"
+    export PROJECT_HOME="$HOME/git/"
+    export WORKON_HOME="$HOME/virtualenv"
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 else
     export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,infrastructure.amicillc.com,testing.amicillc.com
     export http_proxy=http://httpproxy.amicillc.com:8080
