@@ -88,6 +88,8 @@ else
     eval "$(rbenv init -)"
 fi
 
+export PATH=$HOME/installs/packer:$PATH
+
 [[ ! -d "$WORKON_HOME" ]] && mkdir "$WORKON_HOME" # Make virtualenv home directory if it doesn't exist yet
 vew="$(which virtualenvwrapper.sh)"               # Source virtualenvwrapper to get its functions
 [[ -n "$vew" && -e "$vew" ]] && source "$vew"

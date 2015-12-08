@@ -82,3 +82,6 @@ sudo ln -s libclntsh.so.11.1 libclntsh.so
 git clone git@gitlab.amicillc.com:omnix-tools/tnsnames.git
 
 sudo npm install -g eslint
+
+mkdir -p ~/installs/packer
+cd ~/installs/packer && wget https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip && unzip packer_0.8.6_linux_amd64.zip
