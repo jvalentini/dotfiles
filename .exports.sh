@@ -95,7 +95,7 @@ vew="$(which virtualenvwrapper.sh)"               # Source virtualenvwrapper to 
 [[ -n "$vew" && -e "$vew" ]] && source "$vew"
 
 function authorized_keys() {
-    echo "Hosts (~/ansible/hosts):"
-    ansible authorized_keys --list-hosts
-    ansible-playbook ~/dotfiles/authorized_keys.yml
+    echo "Hosts (~/dotfiles/hosts):"
+    ansible-playbook -i ~/dotfiles/hosts ~/dotfiles/authorized_keys.yml --list-hosts
+    ansible-playbook -i ~/dotfiles/hosts ~/dotfiles/authorized_keys.yml -k -f 5
 }
