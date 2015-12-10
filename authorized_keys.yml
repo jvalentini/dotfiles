@@ -1,0 +1,11 @@
+---
+- hosts: authorized_keys
+  remote_user: jvalentini
+#   remote_user: root
+  sudo: yes
+  tasks:
+    - name: add public key to authorized_keys file
+      authorized_key: user={{ item }} key="{{ lookup('file', '/home/jvalentini/.ssh/id_rsa.pub') }}"
+      with_items:
+        - jvalentini
+        - root
