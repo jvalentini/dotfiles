@@ -86,4 +86,7 @@ sudo npm install -g eslint
 mkdir -p ~/installs/packer
 cd ~/installs/packer && wget https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip && unzip packer_0.8.6_linux_amd64.zip
 
+# Ack
+curl -L http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 ~/bin/ack
+
 cd ~/installs && git clone https://github.com/sampson-chen/sack.git && cd sack && chmod +x install_sack.sh && ./install_sack.sh && cd ~/ && ln -sf ~/dotfiles/.sackrc .sackrc
