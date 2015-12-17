@@ -62,3 +62,5 @@ function update_tnsnames {
         echo "Requires TNS_ADMIN to be set"
     fi
 }
+
+alias vagrant-init=vagrant up --no-provision && vagrant snapshot take init
