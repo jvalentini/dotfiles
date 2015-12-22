@@ -63,4 +63,7 @@ function update_tnsnames {
     fi
 }
 
-alias vagrant-init=vagrant up --no-provision && vagrant snapshot take init
+alias vagrant-snap="vagrant up --no-provision && vagrant snapshot take init"
+alias vagrant_snap=vagrant-snap
+alias vs=vagrant-snap
+alias vp="vagrant provision"
