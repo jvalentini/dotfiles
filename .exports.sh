@@ -120,12 +120,12 @@ function _ansible_bootstrap() {
   hosts: all
   sudo: true
   vars:
-    user: "hades"
+    user: "vagrant"
     add_ssh_public_key: true
   roles:
     - common
 EOF
     echo "- src: git+git@gitlab.amicillc.com:dev-tools/ansible-common.git\n  name: common" > roles.yml
-    echo "[defaults]\nroles_path = roles" > ansible.cfg
+    echo "[defaults]\nroles_path = ansible/roles" > ../ansible.cfg
     cd ..
 }
