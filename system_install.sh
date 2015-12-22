@@ -90,3 +90,8 @@ cd ~/installs/packer && wget https://releases.hashicorp.com/packer/0.8.6/packer_
 curl -L http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 ~/bin/ack
 
 cd ~/installs && git clone https://github.com/sampson-chen/sack.git && cd sack && chmod +x install_sack.sh && ./install_sack.sh && cd ~/ && ln -sf ~/dotfiles/.sackrc .sackrc
+
+# RescueTime
+# wget https://www.rescuetime.com/setup/installer?os=amd64deb doesn't work
+sudo apt-get install -y gtk2-engines-pixbuf
+sudo dpkg -i rescuetime_current_amd64.deb
