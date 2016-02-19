@@ -15,7 +15,7 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get upgrade
 
-sudo apt-get install -y build-essential software-properties-common python-software-properties ubuntu-restricted-extras dkms terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 linux-headers-generic virtualbox-dkms virtualbox-5.0 php python python-dev python-pip pylint ipython rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server php5 gstreamer0.10-ffmpeg htop default-jre jq vlc vlc-plugin-notify silversearcher-ag gcc-multilib autotools-dev
+sudo apt-get install -y build-essential software-properties-common python-software-properties ubuntu-restricted-extras dkms terminator curl git corkscrew zsh xmonad xmobar xscreensaver offlineimap gnome-panel xmonad xmobar xscreensaver libaio1 linux-headers-generic virtualbox-dkms virtualbox-5.0 php python python-dev python-pip pylint ipython rbenv ruby-dev redis sqlite pidgin pidgin-plugin-pack openssh-client openssh-server php5 gstreamer0.10-ffmpeg htop default-jre jq vlc vlc-plugin-notify silversearcher-ag gcc-multilib autoconf automake autotools-dev
 
 wget https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.deb && sudo dpkg -i vagrant_1.7.4_x86_64.deb && rm vagrant_1.7.4_x86_64.deb
 
