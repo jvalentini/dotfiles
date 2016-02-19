@@ -1,3 +1,4 @@
 .gitconfig-local
 .local-aliases.sh
 secret.sh
+.tern-port
