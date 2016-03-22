@@ -1,0 +1,9 @@
+---
+- name: create user
+  hosts: all
+  sudo: true
+  vars:
+    user: "vagrant"
+    add_ssh_public_key: true
+  roles:
+    - common
