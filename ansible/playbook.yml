@@ -1,9 +1,32 @@
 ---
 - name: create user
-  hosts: all
-  sudo: true
+  hosts: 127.0.0.1
+  connection: local
   vars:
-    user: "vagrant"
-    add_ssh_public_key: true
+    user: jval
   roles:
     - common
+
+- name: stuff
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+  become_method: sudo
+  become_user: "{{ user }}"
+  vars:
+    user: jval
+    dotfiles_repo: https://github.com/jvalentini/dotfiles.git
+    dotfiles_dest: /home/{{ user }}/dotfiles
+  tasks:
+    - name: updating pip to latest
+      pip: name=pip state=latest
+      become: true
+    - name: installing debops dependency (netaddr)
+      pip: name=netaddr
+      become: true
+    - name: installing debops
+      command: pip install https://github.com/debops/debops/archive/master.zip
+      become: true
+    - name: debops-update
+      command: debops-update
+    - git: repo={{ dotfiles_repo }} dest={{ dotfiles_dest }}
