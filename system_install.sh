@@ -99,3 +99,6 @@ sudo dpkg -i rescuetime_current_amd64.deb
 cd ~/installs && git clone https://github.com/universal-ctags/ctags.git && cd ctags && ./autogen.sh && ./configure && make && sudo make install
 
 sudo ansible-galaxy install debops.sshd
+
+curl -fsSL https://get.docker.com/ | sh
+sudo usermod -aG docker jvalentini
