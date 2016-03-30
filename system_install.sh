@@ -51,7 +51,6 @@ sudo apt-get build-dep emacs24
 curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
 rm -rf ~/.emacs.d
 git clone https://github.com/jvalentini/emacs.git .emacs.d/
-git clone git@gitlab.amicillc.com:dev-tools/amici-el.git ~/.emacs.d/lib/amici-el
 cask
 mkdir -p ~/.erc/logs
 move over ~/.emacs.d/custom/secret.json
@@ -78,8 +77,6 @@ unzip instantclient-sdk-linux.x64-11.2.0.4.0.zip
 
 cd $ORACLE_HOME
 sudo ln -s libclntsh.so.11.1 libclntsh.so
-
-git clone git@gitlab.amicillc.com:omnix-tools/tnsnames.git
 
 sudo npm install -g eslint
 
