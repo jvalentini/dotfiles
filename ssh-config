@@ -81,5 +81,15 @@ Host hades-dev
      ProxyCommand ssh -q alyssa /home/jvalentini/bin/nc roc-dvmsvc01.amicillc.com 22
      ForwardAgent yes
 
+Host blog
+     HostName colabbit.com
+     User root
+     ForwardAgent yes
+
+Host gateway
+     HostName 192.168.0.104
+     User jval
+     ForwardAgent yes
+
 Host *
      ForwardX11 no
