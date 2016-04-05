@@ -7,7 +7,7 @@
   roles:
     - common
 
-- name: stuff
+- name: DebOps
   hosts: 127.0.0.1
   connection: local
   become: true
@@ -30,3 +30,4 @@
     - name: debops-update
       command: debops-update
     - git: repo={{ dotfiles_repo }} dest={{ dotfiles_dest }}
+  tags: debops
