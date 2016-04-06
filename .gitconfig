@@ -4,6 +4,7 @@
 [user]
   name = Justin Valentini
   email = justin.valentini@gmail.com
+  signingkey = 0839B87E
 [credential]
   helper = cache --timeout=28800
 [color]
@@ -33,3 +34,5 @@
   default = simple
 [branch]
   autosetuprebase = always
+[commit]
+  gpgsign = true
