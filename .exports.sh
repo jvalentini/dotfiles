@@ -27,7 +27,6 @@ eval "$(rbenv init -)"
 
 [[ ! -d "$WORKON_HOME" ]] && mkdir "$WORKON_HOME" # Make virtualenv home directory if it doesn't exist yet
 vew="$(which virtualenvwrapper.sh)"               # Source virtualenvwrapper to get its functions
-echo "vew: $vew"
 [[ -n "$vew" && -e "$vew" ]] && source "$vew"
 
 function authorized_keys() {
