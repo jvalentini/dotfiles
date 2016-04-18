@@ -91,5 +91,10 @@ Host gateway
      User jval
      ForwardAgent yes
 
+Host justin-lenovo
+     HostName justin-lenovo
+     User jvalentini
+     Port 2222
+
 Host *
      ForwardX11 no
