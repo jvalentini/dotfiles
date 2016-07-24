@@ -51,7 +51,6 @@ sudo apt-get build-dep emacs24
 curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
 rm -rf ~/.emacs.d
 git clone https://github.com/jvalentini/emacs.git .emacs.d/
-git clone git@gitlab.amicillc.com:dev-tools/amici-el.git ~/.emacs.d/lib/amici-el
 cask
 mkdir -p ~/.erc/logs
 move over ~/.emacs.d/custom/secret.json
@@ -79,8 +78,6 @@ unzip instantclient-sdk-linux.x64-11.2.0.4.0.zip
 cd $ORACLE_HOME
 sudo ln -s libclntsh.so.11.1 libclntsh.so
 
-git clone git@gitlab.amicillc.com:omnix-tools/tnsnames.git
-
 sudo npm install -g eslint
 
 mkdir -p ~/installs/packer
@@ -97,3 +94,8 @@ sudo apt-get install -y gtk2-engines-pixbuf
 sudo dpkg -i rescuetime_current_amd64.deb
 
 cd ~/installs && git clone https://github.com/universal-ctags/ctags.git && cd ctags && ./autogen.sh && ./configure && make && sudo make install
+
+sudo ansible-galaxy install debops.sshd
+
+curl -fsSL https://get.docker.com/ | sh
+sudo usermod -aG docker jvalentini

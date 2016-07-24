@@ -2,3 +2,4 @@
 .local-aliases.sh
 secret.sh
 .tern-port
+ansible/roles/
